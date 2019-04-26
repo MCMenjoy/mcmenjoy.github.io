@@ -1,46 +1,169 @@
-<!DOCTYPE HTML>
-<!--
-	Fractal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>小目标 - 努力，奋斗！</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body id="top">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="./image/bitbug_favicon.ico">
+    <title>小目标 | 明日复明日，明日何其多</title>
+    <style>
+        html {
+            color: #444444;
+            background-color: #F9F9F9;
+        }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<h1><a href="http://target.xyiio.cn">小目标</a></h1>
-					<p>定个小目标，比如先挣它一个亿</p>
-					<ul class="actions">
-						<li><a href="https://www.coolapk.com/apk/cn.xyiio.target" class="button special icon fa-download">下载 release v 1.2</a></li>
-						<li><a href="http://xyiio.cn/" class="button icon fa-chevron-down scrolly">关于 Xyiio</a></li>
-					</ul>
-				</div>
-				<div class="image phone"><div class="inner"><img src="images/screen.png"/></div></div>
-			</header>
+        body {
+            margin: 0;
+            font: 16px 'Roboto',sans-serif;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+        }
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://github.com/turaiiao" class="icon fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-				<p class="copyright">&copy; <a href="http://xyiio.cn/">Xyiio</a> - Turaiiao. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
-			</footer>
+        a {
+            color: #666666;
+            text-decoration: none;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+        #logo {
+            width: 120px;
+            margin: 80px auto 50px;
+            display: block;
+        }
 
-	</body>
+        #app-title {
+            display: block;
+            text-align: center;
+            font-size: 1.8em;
+            margin: 10px auto 20px;
+        }
+
+        #app-desc {
+            text-align: center;
+            font-weight: 100;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        #app-desc a {
+            font-weight: 400;
+        }
+
+        #play-store {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #play-store img {
+            width: 160px;
+        }
+
+        #contacts li {
+            margin: 10px 4px;
+            display: inline-block;
+        }
+
+        div.screens {
+            display: block;
+            height: 430px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            background: #f9f9f9;
+        }
+
+        div.screens p {
+            margin: 10px 0;
+            height: 500px;
+            display: block;
+            max-width: 90%;
+            padding: 0 5%;
+            overflow: scroll;
+            overflow-y: hidden;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        div.screens img {
+            height: 400px;
+            position: relative;
+            margin: 5px 12px 5px;
+            border-radius: 1px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0 0 5px;
+        }
+
+        div.content{
+            max-width: 500px;
+            width: 80%;
+            margin: 35px auto;
+        }
+
+        .btn-info.inverse {
+            color: white;
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
+            background: #f44336;
+            border: 1px solid #f44336;
+            /*padding: 15px 22px 15px 50px;*/
+            padding: 10px 15px 10px 50px;
+            position: relative;
+            text-shadow: 0 1px 0 #f44336;
+        }
+
+        .download {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .btn.android {
+            font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            background-image: url(https://data.zi.com/d8288e41608d2838ab9d68502c4c82d7.svg);
+            background-repeat: no-repeat;
+            background-position: 20px 10px;
+            border-radius: 50px;
+        }
+
+        #footer {
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: 100;
+        }
+
+        #footer a {
+            font-weight: 400;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="logo" src="./image/ic_launcher.png">
+
+    <p id="app-title">小目标</p>
+    <p id="app-desc">定个小目标，比如先挣它一个亿</p>
+
+    <div id="play-store">
+        <a class="btn btn-info btn-radius inverse download android" target="_blank" href="https://www.coolapk.com/apk/cn.xyiio.target">下载 Android 2.8.6 版本</a>
+    </div>
+
+        <div class="screens">
+            <p>
+                <img src="./image/1.png" />
+                <img src="./image/2.png" />
+                <img src="./image/3.png" />
+                <img src="./image/4.png" />
+                <img src="./image/5.png" />
+                <img src="./image/6.png" />
+            </p>
+        </div>
+    <div class="content"></div>
+
+    <p id="footer">Brought to you by <a target="_blank" href="http://www.xyiio.cn/">turaiiao</a> |　<a href="http://blog.xyiio.cn/" target="_blank">联系我</a></p>
+
+    </body>
 </html>
